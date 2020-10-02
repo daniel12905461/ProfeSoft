@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="{{ asset('adminLTE/plugins/toastr/toastr.min.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="{{ asset('adminLTE/plugins/toastr/toastr.min.css') }}">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -80,10 +82,13 @@
 <script src="{{ asset('adminLTE/plugins/toastr/toastr.min.js') }}s"></script>
 <!-- AdminLTE App -->
 <!-- <script src="{{ asset('adminLTE/dist/js/adminlte.min.js') }}"></script> -->
+<!-- Toastr -->
+<script src="{{ asset('adminLTE/plugins/toastr/toastr.min.js') }}"></script>
 
 <!-- Mis scripts de jquery -->
 <script src="{{ asset('js/Evaluacion.js') }}"></script>
 <script src="{{ asset('js/Calificaciones.js') }}"></script>
+<script src="{{ asset('js/Estudiante.js') }}"></script>
 
 </body>
 </html>

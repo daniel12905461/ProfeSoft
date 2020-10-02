@@ -24,12 +24,7 @@ Route::get('/filiacion', function () {
 Route::post('/', 'Logim@logim')->name('LoginProfe');
 
 // Estudiante
-// Route::get('/filiacion', function () {
-//     return view('filiacion');
-// });
-Route::get('/Estudiante', 'Estudiante@ListaEstudiantes');
-Route::post('/Estudiante', 'Estudiante@IngresarEstudiante')->name('IngresarEstudiante');
-Route::get('/eliminarEstudiante/{IdEstudiante}', 'Estudiante@eliminarEstudiante');
+Route::resource('estudiantes', 'EstudianteControl');
 
 // Evaluacion
 Route::get('/Evaluacion', 'EvaluacionControl@Listar');

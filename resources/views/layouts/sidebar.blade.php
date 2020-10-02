@@ -27,8 +27,8 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="/Estudiante" class="nav-link {{ (request()->is('Estudiante')) ? 'active' : '' }}">
-              <i class="nav-icon fas fa-edit"></i>
+            <a href="{{ route('estudiantes.index') }}" class="nav-link {{ (request()->is('estudiantes')) ? 'active' : '' }}">
+              <i class="nav-icon fas fa-user-friends"></i>
               <p>
                 Estudiantes
                 <!-- <span class="right badge badge-danger">New</span> -->
@@ -53,7 +53,7 @@
 					</li>
           <li class="nav-item">
             <a href="/materia" class="nav-link {{ (request()->is('materia')) ? 'active' : '' }}">
-              <i class="nav-icon fas fa-table"></i>
+              <i class="nav-icon fas fa-copy"></i>
               <p>
                 Materias
               </p>
@@ -61,7 +61,7 @@
 					</li>
           <li class="nav-item">
             <a href="/Evaluacion" class="nav-link {{ (request()->is('Evaluacion')) ? 'active' : '' }}">
-              <i class="nav-icon fas fa-table"></i>
+              <i class="nav-icon fas fa-edit"></i>
               <p>
                 Evaluaciones
               </p>
@@ -69,7 +69,7 @@
 					</li>
           <li class="nav-item">
             <a href="/Calificaciones" class="nav-link {{ (request()->is('Calificaciones')) ? 'active' : '' }}">
-              <i class="nav-icon fas fa-table"></i>
+              <i class="nav-icon fas fa-file"></i>
               <p>
                 Calificaciones
               </p>

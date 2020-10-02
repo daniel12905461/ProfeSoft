@@ -37,7 +37,7 @@ class Logim extends Controller
 		if (isset($Datos[0]->Contrasenia)){
 			if ($Datos[0]->Contrasenia == $password) {
 				session(['Daniel'=>'Admin']);
-				return redirect('/Estudiante');
+				return redirect('/Calificaciones');
 			}else{
 				// return redirect('/');
 				return back()->withErrors(['password' => 'Contraseña incorrecta'])

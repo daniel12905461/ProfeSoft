@@ -16,7 +16,7 @@ class Curso extends Model
         'Campo',
         'Area',
         'fechaCreacion',
-        'IdProfesor',
+        'IdProfesor'
     ];
 
     public function profesor(){

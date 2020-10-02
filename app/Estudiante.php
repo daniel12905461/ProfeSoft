@@ -19,6 +19,7 @@ class Estudiante extends Model
         'FechaNacimiento',
         'IdCurso'
     ];
+    public $timestamps = false;
 
     public function curso(){
         return $this->belongsTo('App\Curso', 'IdCurso');
